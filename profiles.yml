@@ -1,0 +1,14 @@
+retail_project:
+  outputs:
+    dev:
+      account: maeykse-ksb03468
+      database: ASSESSMENT
+      password: Suvetha@11112003
+      role: ACCOUNTADMIN
+      schema: RETAIL
+      threads: 1
+      type: snowflake
+      user: suvethas
+      warehouse: COMPUTE_WH
+  target: dev
+
