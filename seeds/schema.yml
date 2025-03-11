@@ -1,0 +1,50 @@
+version: 2
+
+seeds:
+  - name: promotions
+    description: "Contains static data on promotions for products."
+    columns:
+      - name: promotion_id
+        description: "Unique identifier for each promotion."
+        tests:
+          - unique
+          - not_null
+      - name: promotion_code
+        description: "Promotion code used for discounts."
+      - name: discount_percentage
+        description: "Percentage discount applied in this promotion."
+        
+  - name: pricing
+    description: "Contains static pricing details for products."
+    columns:
+      - name: price_id
+        description: "Unique identifier for each price entry."
+        tests:
+          - unique
+          - not_null
+      - name: price
+        description: "Regular price of the product."
+      - name: discounted_price
+        description: "Discounted price during active promotions."
+        
+  - name: stores
+    description: "Contains static information about store locations and details."
+    columns:
+      - name: store_id
+        description: "Unique identifier for each store."
+        tests:
+          - unique
+          - not_null
+      - name: store_name
+        description: "Name of the store."
+        
+  - name: suppliers
+    description: "Contains static data about suppliers."
+    columns:
+      - name: supplier_id
+        description: "Unique identifier for each supplier."
+        tests:
+          - unique
+          - not_null
+      - name: supplier_name
+        description: "Name of the supplier."

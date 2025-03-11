@@ -1,0 +1,17 @@
+version: 2
+
+macros:
+  - name: calculate_age_group
+    description: >
+      Calculates the age group of customers based on their registration date
+      and current date. Categorizes customers into:
+      - Below 18
+      - 18-30
+      - 31-45
+      - 46-60
+      - Above 60
+
+  - name: calculate_return_counts
+    description: >
+      Calculates the number of returned orders for each store.
+      If no orders have been returned, assigns zero instead of null.
